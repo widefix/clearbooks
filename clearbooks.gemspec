@@ -78,7 +78,7 @@ Gem::Specification.new do |spec|
   spec.required_ruby_version  = '>= 1.9'
 
   # General
-  spec.add_runtime_dependency 'thor', '~> 0.19'
+  spec.add_runtime_dependency 'thor'
 
   # Middlewares
   spec.add_runtime_dependency 'savon', '~> 2.11'
@@ -90,13 +90,13 @@ Gem::Specification.new do |spec|
 
   # Post Install
   spec.post_install_message = <<-EOS
-                                                             
-      ____ _     _____    _    ____  ____   ___   ___  _  ______  
-     / ___| |   | ____|  / \  |  _ \| __ ) / _ \ / _ \| |/ / ___| 
-    | |   | |   |  _|   / _ \ | |_) |  _ \| | | | | | | ' /\___ \ 
+
+      ____ _     _____    _    ____  ____   ___   ___  _  ______
+     / ___| |   | ____|  / \  |  _ \| __ ) / _ \ / _ \| |/ / ___|
+    | |   | |   |  _|   / _ \ | |_) |  _ \| | | | | | | ' /\___ \
     | |___| |___| |___ / ___ \|  _ <| |_) | |_| | |_| | . \ ___) |
-     \____|_____|_____/_/   \_\_| \_\____/ \___/ \___/|_|\_\____/ 
-                                                             
+     \____|_____|_____/_/   \_\_| \_\____/ \___/ \___/|_|\_\____/
+
 
     (c) #{spec.date.to_s}, All rights reserved
     Bjoern Rennhak, Greylon Ltd.
