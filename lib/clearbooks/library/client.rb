@@ -87,10 +87,10 @@ module Clearbooks
       response = response.to_hash
       response = response[:create_invoice_response][:create_invoice_return]
       {
-          due:            BigDecimal response[:due],
-          invoice_id:     response[:invoice_id].to_i,
-          invoice_prefix: response[:invoice_prefix],
-          invoice_number: response[:invoice_number]
+        due: BigDecimal(response[:@due]),
+        invoice_id: response[:@invoice_id].to_i,
+        invoice_prefix: response[:@invoice_prefix],
+        invoice_number: response[:@invoice_number]
       }
     end # }}}
 
