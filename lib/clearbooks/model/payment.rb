@@ -69,7 +69,7 @@ module Clearbooks
       @accounting_date  = parse_date data.savon :accounting_date
       @type = data.savon :type
       @description = data.savon :description
-      @amount = BigDecimal.new data.savon :amount
+      @amount = BigDecimal data.savon :amount
       @entity_id = data.savon(:entity_id).to_i
       @payment_method = data.savon(:payment_method).to_i
       @bank_account = data.savon :bank_account

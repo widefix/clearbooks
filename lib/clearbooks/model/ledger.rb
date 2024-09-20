@@ -29,7 +29,7 @@ module Clearbooks
     # @param    [Hash]     data      Ledger attributes. For the list of available options see https://www.clearbooks.co.uk/support/api/docs/soap/createjournal/
     def initialize data
       @account = data.savon :account
-      @amount = BigDecimal.new data.savon :amount
+      @amount = BigDecimal data.savon :amount
     end # }}}
 
     # @fn       def to_savon {{{
