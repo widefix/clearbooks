@@ -119,7 +119,7 @@ module Clearbooks
     # @fn       def add_bank_statement_lines {{{
     # @brief    Creates Bank statement lines via Clearbooks API.
     #
-    # @param    [BankStatemant]   bank_statemant     An bank_statemant to be created. See the list of available options in official API docs: https://www.clearbooks.co.uk/support/api/docs/soap/add-bank-statement-lines/
+    # @param    [BankStatement]   bank_statemant     An bank_statemant to be created. See the list of available options in official API docs: https://www.clearbooks.co.uk/support/api/docs/soap/add-bank-statement-lines/
     #
     def add_bank_statement_lines bank_statemant
       response = super message: bank_statemant.to_savon
