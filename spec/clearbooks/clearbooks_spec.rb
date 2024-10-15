@@ -13,7 +13,7 @@ module Clearbooks
 
     describe :config do
       it 'has default WSDL url' do
-        expect(Clearbooks.config.wsdl).to eq 'https://secure.clearbooks.co.uk/api/wsdl/'
+        expect(Clearbooks.config.wsdl).to eq 'https://secure.clearbooks.co.uk/api/accounting/wsdl/'
       end
 
       it 'has API key' do
@@ -24,4 +24,3 @@ module Clearbooks
   end # of describe Clearbooks
 
 end # of module Clearbooks
-
